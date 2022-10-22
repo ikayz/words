@@ -32,4 +32,11 @@ class LetterListFragment : Fragment() {
         recyclerView = binding.recyclerView
         chooseLayout()
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+
 }
